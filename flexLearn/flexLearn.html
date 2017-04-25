@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="base-code">
+<span class="desc">父容器flex，默认的方向(相当于 flex-direction: row,也可以横向反转)。</span>
+	<div class="pcontain">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+	</div>
+</div>
+
+<div class="base-code">
+<span class="desc">父容器flex，垂直方向（相当于 flex-direction: column ,也可以竖向反转）。</span>
+	<div class="pcontain pdir">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+	</div>
+</div>
+
+
+<div class="base-code">
+<span class="desc">父容器flex-warp:nowrap,超出父容器不换行（默认值）</span>
+	<div class="pcontain">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+		<div class ="item">5</div>
+		<div class ="item">6</div>
+		<div class ="item">7</div>
+		<div class ="item">8</div>
+		<div class ="item">9</div>
+		<div class ="item">10</div>
+		<div class ="item">11</div>
+		<div class ="item">12</div>
+	</div>
+</div>
+
+
+<div class="base-code">
+<span class="desc">父容器flex-warp:wrap,超出父容器换行（也可反转换行warp-reverse）</span>
+	<div class="pcontain flex-warp">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+		<div class ="item">5</div>
+		<div class ="item">6</div>
+		<div class ="item">7</div>
+		<div class ="item">8</div>
+		<div class ="item">9</div>
+		<div class ="item">10</div>
+		<div class ="item">11</div>
+		<div class ="item">12</div>
+	</div>
+</div>
+
+
+<div class="base-code">
+<span class="desc">父容器justify-content:flex-start（主轴最前端）</span>
+	<div class="pcontain flex-warp" style="justify-content: flex-start;">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+	</div>
+</div>
+
+<div class="base-code">
+<span class="desc">父容器justify-content:flex-end（主轴最下端）</span>
+	<div class="pcontain flex-warp" style="justify-content: flex-end;">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+	</div>
+</div>
+
+<div class="base-code">
+<span class="desc">父容器justify-content:center(全部居中显示)</span>
+	<div class="pcontain flex-warp" style="justify-content: center;">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+	</div>
+</div>
+
+
+<div class="base-code">
+<span class="desc">父容器justify-content:space-between（第一个和最后一个顶两端前/后，其他两两间相互相隔相同距离）</span>
+	<div class="pcontain flex-warp" style="justify-content: space-between;">
+		<div class ="item">1</div>
+		<div class ="item">2</div>
+		<div class ="item">3</div>
+		<div class ="item">4</div>
+	</div>
+</div>
+</body>
+</html>

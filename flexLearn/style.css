@@ -1,0 +1,46 @@
+
+
+.base-code
+{
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid #e1e1e8;
+    border-radius: 2px;
+    background-color: #f7f7f9;
+}
+
+.pcontain
+{
+    display: flex;
+
+    margin-top: 20px;
+
+    border: 1px dotted #f01111;
+}
+
+
+.pdir
+{
+    flex-direction: column;
+}
+
+.desc
+{
+    margin: 20px;
+}
+
+.item
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    text-align: center;
+
+    background-color: #1afc5e;
+}
+
+.flex-warp{
+	flex-wrap: wrap;
+}
