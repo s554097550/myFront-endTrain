@@ -1,109 +1,180 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="base-code">
-<span class="desc">父容器flex，默认的方向(相当于 flex-direction: row,也可以横向反转)。</span>
-	<div class="pcontain">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-	</div>
-</div>
 
-<div class="base-code">
-<span class="desc">父容器flex，垂直方向（相当于 flex-direction: column ,也可以竖向反转）。</span>
-	<div class="pcontain pdir">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-	</div>
-</div>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
+	<body>
+		<div class="base-code">
+			<span class="desc">父容器flex，默认的方向(相当于 flex-direction: row,也可以横向反转)。</span>
+			<div class="pcontain">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
-<div class="base-code">
-<span class="desc">父容器flex-warp:nowrap,超出父容器不换行（默认值）</span>
-	<div class="pcontain">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-		<div class ="item">5</div>
-		<div class ="item">6</div>
-		<div class ="item">7</div>
-		<div class ="item">8</div>
-		<div class ="item">9</div>
-		<div class ="item">10</div>
-		<div class ="item">11</div>
-		<div class ="item">12</div>
-	</div>
-</div>
+		<div class="base-code">
+			<span class="desc">父容器flex，垂直方向（相当于 flex-direction: column ,也可以竖向反转）。</span>
+			<div class="pcontain pdir">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
+		<div class="base-code">
+			<span class="desc">父容器flex-warp:nowrap,超出父容器不换行（默认值）</span>
+			<div class="pcontain">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+				<div class="item">9</div>
+				<div class="item">10</div>
+				<div class="item">11</div>
+				<div class="item">12</div>
+			</div>
+		</div>
 
-<div class="base-code">
-<span class="desc">父容器flex-warp:wrap,超出父容器换行（也可反转换行warp-reverse）</span>
-	<div class="pcontain flex-warp">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-		<div class ="item">5</div>
-		<div class ="item">6</div>
-		<div class ="item">7</div>
-		<div class ="item">8</div>
-		<div class ="item">9</div>
-		<div class ="item">10</div>
-		<div class ="item">11</div>
-		<div class ="item">12</div>
-	</div>
-</div>
+		<div class="base-code">
+			<span class="desc">父容器flex-warp:wrap,超出父容器换行（也可反转换行warp-reverse）</span>
+			<div class="pcontain flex-warp">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+				<div class="item">9</div>
+				<div class="item">10</div>
+				<div class="item">11</div>
+				<div class="item">12</div>
+			</div>
+		</div>
 
+		<div class="base-code">
+			<span class="desc">父容器justify-content:flex-start（主轴最前端）</span>
+			<div class="pcontain flex-warp" style="justify-content: flex-start;">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
-<div class="base-code">
-<span class="desc">父容器justify-content:flex-start（主轴最前端）</span>
-	<div class="pcontain flex-warp" style="justify-content: flex-start;">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-	</div>
-</div>
+		<div class="base-code">
+			<span class="desc">父容器justify-content:flex-end（主轴最下端）</span>
+			<div class="pcontain flex-warp" style="justify-content: flex-end;">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
-<div class="base-code">
-<span class="desc">父容器justify-content:flex-end（主轴最下端）</span>
-	<div class="pcontain flex-warp" style="justify-content: flex-end;">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-	</div>
-</div>
+		<div class="base-code">
+			<span class="desc">父容器justify-content:center(全部居中显示)</span>
+			<div class="pcontain flex-warp" style="justify-content: center;">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
-<div class="base-code">
-<span class="desc">父容器justify-content:center(全部居中显示)</span>
-	<div class="pcontain flex-warp" style="justify-content: center;">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-	</div>
-</div>
+		<div class="base-code">
+			<span class="desc">父容器justify-content:space-between（第一个和最后一个顶两端前/后，其他两两间相互相隔相同距离）</span>
+			<div class="pcontain flex-warp" style="justify-content: space-between;">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
+		<div class="base-code">
+			<span class="desc">父容器justify-content:space-around（两两间相互相隔相同距离）</span>
+			<div class="pcontain flex-warp" style="justify-content: space-around;">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
 
-<div class="base-code">
-<span class="desc">父容器justify-content:space-between（第一个和最后一个顶两端前/后，其他两两间相互相隔相同距离）</span>
-	<div class="pcontain flex-warp" style="justify-content: space-between;">
-		<div class ="item">1</div>
-		<div class ="item">2</div>
-		<div class ="item">3</div>
-		<div class ="item">4</div>
-	</div>
-</div>
-</body>
+		<div class="danger-text">justify-content是针对横轴来设置子元素的属性，而align-items是用来根据纵轴设置子元素属性</div>
+
+		<div class="base-code">
+			<span class="desc">父容器align-items: stretch（拉伸占满）</span>
+			<div class="pcontain-height" style="align-items: stretch;">
+				<div class="item-noheight">1</div>
+				<div class="item-noheight">2</div>
+				<div class="item-noheight">3</div>
+				<div class="item-noheight">4</div>
+			</div>
+		</div>
+
+		<div class="base-code">
+			<span class="desc">父容器align-items: baseline（按照最大的那个的基准线，这里是第三个）</span>
+			<div class="pcontain-height" style="align-items:baseline;">
+				<div class="item-noheight">my name</div>
+				<div class="item-noheight">My NAME</div>
+				<div class="item-noheight" style="font-size:x-large">HELLO</div>
+				<div class="item-noheight">4</div>
+			</div>
+		</div>
+
+		<div class="base-code">
+			<span class="desc">父容器align-items: center（纵轴的中间）</span>
+			<div class="pcontain-height" style="align-items:center;">
+				<div class="item-noheight">my name</div>
+				<div class="item-noheight">My NAME</div>
+				<div class="item-noheight" style="font-size:x-large">HELLO</div>
+				<div class="item-noheight">4</div>
+			</div>
+		</div>
+
+		<div class="base-code">
+			<span class="desc">父容器align-items: flex-start（纵轴的顶部对齐）</span>
+			<div class="pcontain-height" style="align-items:flex-start;">
+				<div class="item-noheight">my name</div>
+				<div class="item-noheight">My NAME</div>
+				<div class="item-noheight" style="font-size:x-large">HELLO</div>
+				<div class="item-noheight">4</div>
+			</div>
+		</div>
+
+		<div class="base-code">
+			<span class="desc">父容器align-items: flex-end（纵轴的尾部对齐）</span>
+			<div class="pcontain-height" style="align-items:flex-end;">
+				<div class="item-noheight">my name</div>
+				<div class="item-noheight">My NAME</div>
+				<div class="item-noheight" style="font-size:x-large">HELLO</div>
+				<div class="item-noheight">4</div>
+			</div>
+		</div>
+
+		<div>
+			<p>align-content</p>
+
+		
+			<p>还记得前面讨论的wrap属性吗？我们在Flex容器中添加了更多的Flex项目。让Flex容器中的Flex项目多行排列。</p>
+
+		
+			<p><p class="danger-text">align-content属性用于多行的Flex容器</p>。它也是用来控制Flex项目在Flex容器里的排列方式，排列效果和align-items值一样，但除了baseline属性值。</p>
+		</div>
+	</body>
+
 </html>

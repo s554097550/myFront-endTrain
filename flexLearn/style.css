@@ -19,6 +19,16 @@
     border: 1px dotted #f01111;
 }
 
+.pcontain-height
+{
+    display: flex;
+
+    margin-top: 20px;
+
+    border: 1px dotted #f01111;
+    
+    height: 350px;
+}
 
 .pdir
 {
@@ -41,6 +51,23 @@
     background-color: #1afc5e;
 }
 
+.item-noheight
+{
+    width: 100px;
+    margin: 10px;
+
+    text-align: center;
+
+    background-color: #1afc5e;
+}
+
 .flex-warp{
 	flex-wrap: wrap;
+}
+
+.danger-text{
+	color: #F01111;
+	font-weight: lighter;
+	font-size: large;
+	margin: 20px;
 }
