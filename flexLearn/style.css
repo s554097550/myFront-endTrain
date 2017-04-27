@@ -12,9 +12,10 @@
 
 .base-codeWidth
 {
+    width: 300px;
     margin: 10px;
     padding: 10px;
-	width: 300px;
+
     border: 1px solid #e1e1e8;
     border-radius: 2px;
     background-color: #f7f7f9;
@@ -33,11 +34,10 @@
 {
     display: flex;
 
+    height: 350px;
     margin-top: 20px;
 
     border: 1px dotted #f01111;
-    
-    height: 350px;
 }
 
 .pdir
@@ -71,23 +71,32 @@
     background-color: #1afc5e;
 }
 
-.flex-warp{
-	flex-wrap: wrap;
+.flex-warp
+{
+    flex-wrap: wrap;
 }
 
-.danger-text{
-	color: #F01111;
-	font-weight: lighter;
-	font-size: large;
-	margin: 20px;
+.danger-text
+{
+    font-size: large;
+    font-weight: lighter;
+
+    margin: 20px;
+
+    color: #f01111;
 }
-.itemtitle{
-	margin-top: 200px;
-	font-size: xx-large;
-	border-top: 5px aqua solid;
+.itemtitle
+{
+    font-size: xx-large;
+
+    margin-top: 200px;
+
+    border-top: 5px aqua solid;
 }
-.keyword{
-	color: crimson;
-	background-color: #121312;
-	padding: 5px;
+.keyword
+{
+    padding: 5px;
+
+    color: crimson;
+    background-color: #121312;
 }
