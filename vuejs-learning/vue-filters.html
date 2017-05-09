@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vue过滤器</title>
+		<script type="text/javascript" src="js/vue.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--通过管道符 | 把函数toInt 放在变量后面即可，
+			num1，num2，num3会分别作为参数value传入toInt( value )方法进行运算，
+			并返回一个整数。-->
+			数字1:{{num1|toInt}}
+			数字2:{{num2|toInt}}
+			数字3:{{num3|toInt}}
+		</div>
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					num1:123.45,
+					num2:1342.977,
+					num3:8831.21
+				},
+				filters:{//申明过滤器
+					toInt(value){//过滤器中的方法
+						return parseInt(value);
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

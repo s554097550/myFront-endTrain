@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vue-watch属性</title>
+		<script type="text/javascript" src="js/vue.js" ></script>
+	</head>
+	<body>
+		<div id="app" >
+			click次数{{num}}
+			<button @click="addNum">点击增加</button>
+			<div>
+				{{newNum}}
+			</div>
+		</div>
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					num:0,
+					newNum:0
+				},
+				methods:{
+						addNum(){
+							return this.num++;
+						}
+					},
+				watch:{
+					num(){
+						console.log('num值开始变化');
+						this.newNum = this.num;
+					}
+				}
+				
+			});
+		</script>
+	</body>
+</html>

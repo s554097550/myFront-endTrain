@@ -126,12 +126,12 @@
 				font-size: larger;
 			}
 		</style>
-		<script src="https://cdn.bootcss.com/vue/2.3.2/vue.js"></script>
+		<script src="js/vue.js"></script>
 
 	</head>
 
 	<body>
-		<h1 style="text-align: center;">简易版TODO-LIST</h1>
+		<h1 style="text-align: center;position: relative;bottom: 20px;">简易版TODO-LIST</h1>
 		<div class="warp card" id="app">
 			<input type="text" v-model="task.content" @keydown.enter="addTask" />
 			<p v-if="list.length === 0" class="empty">
@@ -164,7 +164,7 @@
 						};
 					},
 					changeState(index) {
-						let curState = this.list[index].finished;
+						var curState = this.list[index].finished;
 						this.list[index].finished = !curState;
 					},
 					delTask(index) {

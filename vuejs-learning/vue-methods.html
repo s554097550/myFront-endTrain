@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vue方法属性</title>
+		<script type="text/javascript" src="js/vue.js" ></script>
+	</head>
+	<body>
+		<div id="app" >
+			click次数{{num}}
+			<button @click="addNum">点击增加</button>
+		</div>
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					num:0
+				},
+				methods:{
+						addNum(){
+							return this.num++;
+						}
+					}
+				
+			});
+		</script>
+	</body>
+</html>

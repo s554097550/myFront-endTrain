@@ -1,0 +1,31 @@
+.emphasize{
+	font-weight: 900;
+	color: #DC143C;
+	text-align: center;
+	margin: 10px;
+}
+.tl{
+	text-align: left;
+}
+
+.unit{
+	border: 1px #E1E1E8 solid;
+	padding: 10px;
+	display: flex;
+	margin: 20px;
+}
+.content{
+	flex: 1;
+}
+.info{
+	color: #E1E1E8;
+	
+}
+
+.original{
+	font-size: smaller;
+	color: grey;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 2px;
+}

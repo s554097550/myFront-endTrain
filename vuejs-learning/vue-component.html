@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>vue-component</title>
+		<link rel="stylesheet" type="text/css" href="css/vue.css" />
+		<script type="text/javascript" src="js/vue.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<art v-for="article in articles" :article="article"></art>
+		</div>
+
+		<script>
+			Vue.component('art', { //莫名其妙的名字出错
+				//只要这里是v-blink即：的属性都可以使用props来获取
+				props:['article'],
+				template: '<div class="unit"><div class="content"><h1>{{article.title}}</h1><div class="info">' +
+					'<span>{{article.date}}</span><span v-if="article.is_original" class="original">原创</span><span v-else class="original">转载</span></div>' +
+					'</div><img :src="article.cover_url" alt="my wechat"></div>'
+			});
+			new Vue({
+				el: '#app',
+				data: {
+					articles: [{
+							title: "第一节：Vue.js框架是什么，为什么选择它？ ",
+							date: " 2017年03月06日",
+							is_original: true,
+							cover_url: "img/IMG_2996.JPG"
+						},
+						{
+							title: "第二节：简易安装 和 快速入门Vue.js ",
+							date: " 2017年03月09日",
+							is_original: true,
+							cover_url: "img/IMG_2996.JPG"
+						},
+						{
+							title: "第三节：创建一个Vue实例，超简单 ",
+							date: " 2017年03月17日",
+							is_original: false,
+							cover_url: "img/IMG_2996.JPG"
+						},
+						{
+							title: "第四节：定义一个vue实例的4 个常用选项 ",
+							date: " 2017年03月20日",
+							is_original: true,
+							cover_url: "img/IMG_2996.JPG"
+						},
+					]
+				}
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>vue-lifecycle属性</title>
+		<script type="text/javascript" src="js/vue.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			演示{{msg}}的生命周期
+		</div>
+		<script>
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					msg: 'vue'
+				},
+				beforeCreate() {
+					console.log('创建之前，数据和挂载元素都未渲染');
+					console.log('数据：');
+					console.log(this.$data);
+					console.log('挂载元素：');
+					console.log(this.$el);
+				},
+				created() {
+					console.log('创建之后，数据已经装载完毕，挂载元素未就绪');
+					console.log('数据：');
+					console.log(this.$data);
+					console.log('挂载元素：');
+					console.log(this.$el);
+				},
+				beforeMount() {
+					console.log('元素被挂载前');
+					console.log('数据：');
+					console.log(this.$data);
+					console.log('挂载元素：');
+					console.log(this.$el.innerHTML);
+				},
+				mounted() {
+					console.log('元素被渲染');
+					console.log('数据：');
+					console.log(this.$data);
+					console.log('挂载元素：');
+					console.log(this.$el.innerHTML);
+				},
+				beforeUpdate() {
+					console.log('元素被更新前');
+					console.log('数据：');
+					console.log(this.$data);
+					console.log('挂载元素：');
+					console.log(this.$el.innerHTML);
+				},
+				updated() {
+					console.log('元素被更新前');
+					console.log('数据：');
+					console.log(this.$data);
+					console.log('挂载元素：');
+					console.log(this.$el.innerHTML);
+				},
+				beforeDestroy() {
+					console.log('销毁之前');
+				},
+				destroyed() {
+					console.log('销毁成功');
+				}
+			});
+		</script>
+	</body>
+
+</html>

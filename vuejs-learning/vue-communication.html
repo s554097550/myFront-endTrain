@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/vue.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+			<son :message="msg"></son>
+		</div>
+		
+		<script>
+			Vue.component('son',{
+				props:['message'],
+				template:'<div>{{message}}</div>'
+			})
+			
+			new Vue({
+				el:'#app',
+				data:{
+					msg:'我是父亲的消息'
+				}
+			});
+		</script>
+	</body>
+</html>

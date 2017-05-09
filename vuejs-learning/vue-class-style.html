@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.active{
+				color: #DC143C;
+			}
+			.fonts{
+				font-size: x-large;
+			}
+		</style>
+		<script type="text/javascript" src="js/vue.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+			<div :style="{color:co}">
+				我是内联样式
+			</div>
+			<div :class="{'active':is_active}">
+				我是json格式来决定class是否存在
+			</div>
+			<div :class="[activeClass,fontClass]">
+				我是数组形式，决定我的确定样式,如果其中一个空就没有，类似json格式
+			</div>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:'#app',
+				data:{
+					co:'#AFFEFE',
+					is_active:true,
+					activeClass:"active",
+					fontClass:"fonts"
+					
+				}
+			})
+		</script>
+	</body>
+</html>
